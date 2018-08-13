@@ -1,59 +1,56 @@
-var async = require('async');
 
 // Require the driver.
-var pg = require('../../');
+const cockdb = require('../../');
 
 // Connect to the "bank" database.
-var config = {
-    // user: 'root',
-    // host: 'localhost',
+const config = {
+    user: 'root',
+    host: 'localhost',
     database: 'bank',
-    // port: 26257
+    port: 26257
 };
 
 // Create a pool.
-var pool = new pg.Pool(config);
+const pool = new cockdb.Pool(config);
 
 pool.connect(function (err, client, done) {
     if (err) {
         console.log(err);
+        // Closes communication with the database when error.
+        done();
     } else {
-// Closes communication with the database and exits.
-var finish = function () {
-    done();
-    process.exit();
-};
-
-if (err) {
-    console.error('could not connect to cockroachdb', err);
-    finish();
-}
-async.waterfall([
-    function (next) {
-        // Create the "accounts" table.
-        client.query('CREATE TABLE IF NOT EXISTS accounts (id INT PRIMARY KEY, balance INT);', next);
-    },
-    function (results, next) {
-        // Insert two rows into the "accounts" table.
-        client.query('INSERT INTO accounts (id, balance) VALUES (4, 1000);', next);
-    },
-    function (results, next) {
-        // Print out the balances.
-        client.query('SELECT id, balance FROM accounts;', next);
-    },
-],
-    function (err, results) {
         if (err) {
-            console.error('error inserting into and selecting from accounts', err);
-            finish();
+            console.error('could not connect to cockroachdb', err);
+            done();
+        } else {
+            // Create the "accounts" table.
+            client.query('CREATE TABLE IF NOT EXISTS accounts (id INT PRIMARY KEY, balance INT);', (err, res) => {
+                if (err) {
+                    console.log(err);
+                } else {
+                    console.log(res);
+                }
+            });
+
+            // Insert rows into the "accounts" table.
+            client.query('INSERT INTO accounts (id, balance) VALUES (5, 1000);', (err, res) => {
+                if (err) {
+                    console.log(err);
+                } else {
+                    console.log(res);
+                }
+            });
+
+            // Print out the balances.
+            client.query('SELECT id, balance FROM accounts;', (err, res) => {
+                if (err) {
+                    console.log(err);
+                } else {
+                    console.log(res.rows);
+                }
+            });
         }
 
-        console.log('Initial balances:');
-        results.rows.forEach(function (row) {
-            console.log(row);
-        });
-
-        finish();
-    });
+        // Close communication with the database when finish your operate
     }
-});
+})
