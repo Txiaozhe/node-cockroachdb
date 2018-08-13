@@ -73,59 +73,9 @@ pool.connect(function (err, client, done) {
 })
 ```
 
----
-
-### Features
-
-* Pure JavaScript client and native libpq bindings share _the same API_
-* Connection pooling
-* Extensible JS<->PostgreSQL data-type coercion
-* Supported PostgreSQL features
-  * Parameterized queries
-  * Named statements with query plan caching
-  * Async notifications with `LISTEN/NOTIFY`
-  * Bulk import & export with `COPY TO/COPY FROM`
-
-### Extras
-
-node-postgres is by design pretty light on abstractions.  These are some handy modules we've been using over the years to complete the picture.
-The entire list can be found on our [wiki](https://github.com/brianc/node-postgres/wiki/Extras).
-
-## Support
-
-node-postgres is free software.  If you encounter a bug with the library please open an issue on the [GitHub repo](https://github.com/brianc/node-postgres). If you have questions unanswered by the documentation please open an issue pointing out how the documentation was unclear & I will do my best to make it better!
-
-When you open an issue please provide:
-- version of Node
-- version of Postgres
-- smallest possible snippet of code to reproduce the problem
-
-You can also follow me [@briancarlson](https://twitter.com/briancarlson) if that's your thing. I try to always announce noteworthy changes & developments with node-postgres on Twitter.
-
-### Professional Support
-
-I offer professional support for node-postgres.  I provide implementation, training, and many years of expertise on how to build applications with Node, Express, PostgreSQL, and React/Redux.  Please contact me at [brian.m.carlson@gmail.com](mailto:brian.m.carlson@gmail.com) to discuss how I can help your company be more successful!
-
-### Sponsorship :star:
-
-If you are benefiting from node-postgres and would like to help keep the project financially sustainable please visit Brian Carlson's [Patreon page](https://www.patreon.com/node_postgres).
-
-## Contributing
-
-__:heart: contributions!__
-
-I will __happily__ accept your pull request if it:
-- __has tests__
-- looks reasonable
-- does not break backwards compatibility
-
-## Troubleshooting and FAQ
-
-The causes and solutions to common errors can be found among the [Frequently Asked Questions (FAQ)](https://github.com/brianc/node-postgres/wiki/FAQ)
-
 ## License
 
-Copyright (c) 2010-2018 Brian Carlson (brian.m.carlson@gmail.com)
+Copyright (c) 2018 Txiaozhe (txiaozhe@gmail.com)
 
  Permission is hereby granted, free of charge, to any person obtaining a copy
  of this software and associated documentation files (the "Software"), to deal
