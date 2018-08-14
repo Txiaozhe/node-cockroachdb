@@ -1,4 +1,4 @@
-# node-postgres
+# cockroachdb
 
 <!-- [![Build Status](https://secure.travis-ci.org/brianc/node-postgres.svg?branch=master)](http://travis-ci.org/brianc/node-postgres)
 [![Dependency Status](https://david-dm.org/brianc/node-postgres.svg)](https://david-dm.org/brianc/node-postgres) -->
@@ -17,7 +17,7 @@ $ npm install cockroachdb --save
 
 ```javascript
 // Require the driver.
-const cockdb = require('../../');
+const cockdb = require('cockroachdb');
 
 // Connect to the "bank" database.
 const config = {
