@@ -33,7 +33,7 @@ pool.connect(function (err, client, done) {
             });
 
             // Insert rows into the "accounts" table.
-            client.query('INSERT INTO accounts (id, balance) VALUES (5, 1000);', (err, res) => {
+            client.query('INSERT INTO accounts (id, balance) VALUES (6, 1000);', (err, res) => {
                 if (err) {
                     console.log(err);
                 } else {
