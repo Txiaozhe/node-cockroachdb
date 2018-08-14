@@ -1,7 +1,7 @@
 {
-  "name": "pg",
-  "version": "7.4.3",
-  "description": "PostgreSQL client - pure javascript & libpq with the same API",
+  "name": "cockroachdb",
+  "version": "1.0.1",
+  "description": "CockroachDB client - pure javascript & libpq with the same API, forked from brianc/node-postgres.",
   "keywords": [
     "cockroachdb",
     "nodejs",
