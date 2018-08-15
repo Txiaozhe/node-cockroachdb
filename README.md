@@ -2,8 +2,8 @@
 
 <!-- [![Build Status](https://secure.travis-ci.org/brianc/node-postgres.svg?branch=master)](http://travis-ci.org/brianc/node-postgres)
 [![Dependency Status](https://david-dm.org/brianc/node-postgres.svg)](https://david-dm.org/brianc/node-postgres) -->
-<span class="badge-npmversion"><a href="https://www.npmjs.com/package/cockroachdb" title="View this project on NPM"><img src="https://img.shields.io/npm/v/pg.svg" alt="NPM version" /></a></span>
-<span class="badge-npmdownloads"><a href="https://www.npmjs.com/package/cockroachdb" title="View this project on NPM"><img src="https://img.shields.io/npm/dm/pg.svg" alt="NPM downloads" /></a></span>
+<span class="badge-npmversion"><a href="https://github.com/Txiaozhe/cockroachdb" title="View this project on GitHub"><img src="https://img.shields.io/github/stars/Txiaozhe/cockroachdb.svg" alt="GitHub stars" /></a></span>
+<span class="badge-npmdownloads"><a href="https://github.com/Txiaozhe/cockroachdb" title="View this project on GitHub"><img src="https://img.shields.io/github/license/Txiaozhe/cockroachdb.svg" alt="license" /></a></span>
 
 Non-blocking CockroachDB client for Node.js. Forked from brianc/node-postgres.  Pure JavaScript and optional native libpq bindings.
 
