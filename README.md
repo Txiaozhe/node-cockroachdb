@@ -15,6 +15,7 @@ $ npm install cockroachdb --save
 
 ## Getting Started
 
+### Basic
 ```javascript
 // Require the driver.
 const cockdb = require('cockroachdb');
@@ -71,6 +72,11 @@ pool.connect(function (err, client, done) {
         // Close communication with the database when finish your operate
     }
 })
+```
+
+### Transaction
+```javascript
+
 ```
 
 ## License
