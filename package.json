@@ -1,6 +1,6 @@
 {
   "name": "cockroachdb",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "CockroachDB client - pure javascript & libpq with the same API, forked from brianc/node-postgres.",
   "keywords": [
     "cockroachdb",
