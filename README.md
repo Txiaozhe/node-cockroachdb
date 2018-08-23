@@ -1,5 +1,7 @@
 # cockroachdb
 
+[![npm package](https://nodei.co/npm/cockroachdb.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/cockroachdb/)
+
 <!-- [![Build Status](https://secure.travis-ci.org/brianc/node-postgres.svg?branch=master)](http://travis-ci.org/brianc/node-postgres)
 [![Dependency Status](https://david-dm.org/brianc/node-postgres.svg)](https://david-dm.org/brianc/node-postgres) -->
 <span class="badge-npmversion"><a href="https://github.com/Txiaozhe/cockroachdb" title="View this project on GitHub"><img src="https://img.shields.io/github/stars/Txiaozhe/cockroachdb.svg" alt="GitHub stars" /></a></span>
